@@ -451,6 +451,12 @@ ul {
   }
 }
 
+.main-banner {
+  padding: 200px 0 300px;
+  min-height: 100vh;
+  position: relative;
+}
+
 .js-parallax-scene {
   position: absolute;
   top: 0;
@@ -472,6 +478,21 @@ ul {
   background-position: center;
   animation: biani 4.5s linear infinite alternate;
   box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+}
+
+@keyframes biani {
+  0% {
+    border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+  }
+  25% {
+    border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+  }
+  50% {
+    border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+  }
+  100% {
+    border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+  }
 }
 
 .banner-img-text .h5-title {
@@ -530,4 +551,48 @@ ul {
   background-position: 0 90%;
   background-repeat: no-repeat;
   transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0d0d25;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sec-btn {
+  min-width: 120px;
+  min-height: 58px;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #0d0d25;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  padding: 6px 30px;
+}
+
+.sec-btn:hover {
+  border-color: #0d0d25;
+  box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #fff;
+  color: #0d0d25;
 }
